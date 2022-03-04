@@ -13,22 +13,30 @@
   <!-- Banner & jumbotron section -->
   <header>
 
-    <div class="banner"></div>
-    <div class="jumbotron"></div>
+    <div class="banner mb-15"></div>
+    <div class="jumbotron mb-15"></div>
     
   </header>
   <!-- / Banner & jumbotron section -->
 
   <!-- Second-banner & column sections -->
-  <main class="clearfix">
+  <main class="mb-15">
 
-    <div class="top-ban"></div>
-    <section class="col col-sx"></section>
-    <section class="center"></section>
-    <section class="col col-dx"></section>
-  <!-- / Second-banner & column sections -->
+    <div class="top-ban mb-15"></div>
+
+    <!-- CORREZZINOE: gli elementi che hanno il float andrebbero racchiusi in un contenitore al quale viene dato la classe .clearfix. Non é scorretto dare clearfix al main ma é meno specifico di quanto detto sopra. -->
+
+    <!-- Elementi Float -->
+    <div class="clearfix mb-15">
+      <section class="col col-sx"></section>
+      <section class="center"></section>
+      <section class="col col-dx"></section>
+    </div>
+    <!-- / Elementi Float -->
+    
 
   </main>
+  <!-- / Second-banner & column sections -->
 
   <!-- Footer -->
   <footer class="credits"></footer>
